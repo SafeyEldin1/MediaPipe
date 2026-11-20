@@ -15,8 +15,8 @@ CAMERA_WIDTH = 640
 CAMERA_HEIGHT = 480
 MARGIN = 10  # pixels
 ROW_SIZE = 10  # pixels
-FONT_SIZE = 3
-FONT_THICKNESS = 3
+FONT_SIZE = 2
+FONT_THICKNESS = 2
 TEXT_COLOR = (0 , 255 , 0)  # green
 
 
@@ -91,7 +91,7 @@ while True:
     annotated_image = visualize(image.copy(), detection_result)
 
 
-    cv2.putText(annotated_image, "Press 'Q' to quit " (10, 30), cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0) , 2 )
+    cv2.putText(annotated_image, "Press 'Q' to quit" , (10, 30), cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0) , 2 )
     cv2.imshow('MediaPipe Object Detection', cv2.cvtColor(annotated_image , cv2.COLOR_RGB2BGR))
 
     key = cv2.waitKey(1) & 0xFF 
