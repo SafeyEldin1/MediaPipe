@@ -51,7 +51,8 @@ def visualize(
 
 
 # STEP : Create an ObjectDetector object.
-base_options = python.BaseOptions(model_asset_path='Models\efficientdet_lite0.tflite')
+base_options = python.BaseOptions(
+    model_asset_path=r'Models\efficientdet_lite0.tflite')
 options = vision.ObjectDetectorOptions(base_options=base_options,
                                        score_threshold=0.5)
 detector = vision.ObjectDetector.create_from_options(options)
